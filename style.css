@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+    background-size: cover;
+}
+
+
+.Profil {
+    width: 420px;
+    margin-top: 0.%;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(2px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    color: #000;
+    border-radius: 15px;
+    border-width: fixed;
+    padding: 30px 40px;
+}
+
+.info {
+    margin-left: 36%;
+    width: 30%;
+    height: 45px;
+    background: #fff;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+}
+.info:hover{
+    background-color: rgba(0, 0, 0, .06);
+}
+
+
+.Profil img{
+    width: 50%;
+    height: 50%;
+    border-radius: 120px;
+    margin: 0px 0px 10px 110px;
+}
+
+.Profil h1{
+    margin: -10px 0px 10px 180px;
+}
+
+.Profil p {
+    margin: 10px 0px 10px 0px;
+}
+
+.clock {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+
+}
+
+.infopopup {
+    display: none; 
+    position: fixed; 
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    z-index: 2; 
+}
+.infocard {
+    align-items: center;
+    justify-content: center;
+    width: 450px;
+    height: 330px;
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color:#fff;
+    opacity: 80;
+    margin-top: 8%;
+
+}
+
+.infocard img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin: -4px 0px 0px 0px;
+
+}
+
+.btninfo {
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    padding: 10px 20px;
+    border: 1px solid;
+    border-radius: 40px;
+    cursor: pointer;
+    color: #333;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+    margin: 0px 0px 0px 190px;
+}
+
+.btninfo:hover {
+    background-color: rgba(0, 0, 0, .06);
+}
+
+
