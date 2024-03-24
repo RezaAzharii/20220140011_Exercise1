@@ -3,37 +3,37 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: "Montserrat", sans-serif;
-}
-
-html, body {
-    height: 100%;
-    margin: 0;
 }
 
 body {
+    font-family: "Montserrat", sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+    background-color: #222;
+    color: #fff;
     background-size: cover;
+    overflow-y: auto;
+    scroll-snap-type: y mandatory;
 }
 
 
 .Profil {
     width: 420px;
-    margin-top: 0.%;
+    margin-top: 10%;
+    margin-left: 26.5%;
     border: 2px solid rgba(255, 255, 255, .2);
     backdrop-filter: blur(2px);
+    background-color: #000;
     box-shadow: 0 0 10px rgba(0, 0, 0, .2);
-    color: #000;
+    color: #fff;
     border-radius: 15px;
     border-width: fixed;
-    padding: 30px 40px;
+    padding: 63px 40px;
 }
 
 .info {
-    margin-left: 36%;
+    margin-left: 28%;
     width: 30%;
     height: 45px;
     background: #fff;
@@ -45,7 +45,7 @@ body {
     font-weight: 600;
 }
 .info:hover{
-    background-color: rgba(0, 0, 0, .06);
+    opacity: 0.7;
 }
 
 
@@ -77,22 +77,24 @@ body {
     top: 50%;
     left: 50%; 
     transform: translate(-50%, -50%); 
+    backdrop-filter: blur(3px) saturate(120%);
     z-index: 2; 
 }
+
 .infocard {
     align-items: center;
     justify-content: center;
-    width: 450px;
+    width: 600px;
     height: 330px;
     margin: 20px;
     padding: 20px;
+    padding-bottom: 43px;
     border: 2px solid rgba(255, 255, 255, .2);
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-color:#fff;
+    background-color:#3f3c3c;
     opacity: 80;
     margin-top: 8%;
-
 }
 
 .infocard img {
@@ -105,6 +107,7 @@ body {
 }
 
 .btninfo {
+    width: 50vh;
     background: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, .1);
     padding: 10px 20px;
@@ -115,11 +118,10 @@ body {
     font-size: 16px;
     color: #333;
     font-weight: 600;
-    margin: 0px 0px 0px 190px;
+    margin: 0px 0px 0px 129px;
+    margin-top: 10px;
 }
 
 .btninfo:hover {
-    background-color: rgba(0, 0, 0, .06);
+    opacity: 0.7;
 }
-
-

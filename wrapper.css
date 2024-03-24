@@ -1,0 +1,123 @@
+body {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    height: 100%;
+    
+}
+.wrapper {
+    margin-top: 19.2%;
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+    padding-bottom: 10%;
+}
+
+.card {
+    position: relative;
+    width: 325px;
+    height: 450px;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+    display: flex; 
+    flex-direction: column;
+}
+
+.card:hover {
+    transform: translateY(-20px);
+}
+
+.poster {
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+    transition: opacity 0.3s ease;
+}
+
+.card:hover .poster {
+    opacity: 0.7;
+}
+
+.details {
+    padding: 1.5em;
+    background: #000a;
+    backdrop-filter: blur(16px) saturate(120%);
+    transition: bottom 0.3s;
+    color: #fff;
+    z-index: 2;
+}
+
+.card:hover .details {
+    bottom: 0;
+    
+}
+
+.details h1 {
+    font-weight: 700;
+    font-size: 1.5em;
+    margin-bottom: 5px;
+}
+
+.piggy-secure {
+    background-image: url('./img/bg1.jpg');
+}
+
+.mellin {
+    background-image: url('./img/bg4.jpg');
+}
+
+.madam-s {
+    background-image: url('./img/bg3.jpg');
+}
+
+.Juki {
+    background-image: url('./img/bg6.jpg');
+}
+
+button {
+    appearance: none;
+    border: none;
+    background: transparent;
+    position: absolute;
+}
+
+#next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    right: 10px;
+    z-index: 1;
+}
+
+
+#prev {
+    left: 0;
+    top: 50%;
+}
+
+button i {
+    padding: 10px;
+    font-size: 1.6rem;
+    cursor: pointer;
+    color: aliceblue;
+}
+
+button i:active {
+    color: orange;
+}
+
+.hidden {
+    display: none;
+}

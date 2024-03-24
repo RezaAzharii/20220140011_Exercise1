@@ -5,19 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bob's</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="wrapper.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
 </head>
 <body>
+  <!-- Profile Founder -->
     <div class="Profil">
-        <h1>Bob</h1>
+        <h1>Piggy Production's</h1>
         <img src="./img/Bob2.jpg" alt="">
         <p class="clock" id="hasil"></p>
         <div class="isi">
             <p>Bob adalah manusia yang lahir di dunia yang sangat keras
                 dan dia berusaha untuk berjuang melawan segala rintangan yang menimpa hidupnya,
                 tetapi dia Ganteng.
+                Dan dia adalah Co-Founder dari Piggy Production's 
             </p>
+          <button class="info" id="btn" onclick="showInfoPopup()">Info</button>
         </div>
-        <button class="info" id="btn" onclick="showInfoPopup()">Info</button>
+        
         
         <div class="infopopup" id="popup">
             <div class="infocard">
@@ -28,10 +33,66 @@
               <button class="btninfo" onclick="hideInfoPopup()">Iya</button>
             </div>
           </div>
+    </div>
 
-        
+    <!-- Profile Member -->
+    <div class="wrapper">
+      <div class="card">
+        <div class="poster piggy-secure"></div>
+        <div class="details">
+          <h1>Piggy Secure</h1>
+          <div class="desc">
+            <p>
+              Piggy Adalah seorang security di salah satu perusahaan bernama 
+              Piggy Production's
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="poster mellin"></div>
+        <div class="details">
+          <h1>Mellin</h1>
+          <div class="desc">
+            <p>
+              Mellin Adalah Manager di perusahaan bernama 
+              Piggy Production's
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="poster madam-s"></div>
+        <div class="details">
+          <h1>Madam S</h1>
+          <div class="desc">
+            <p>
+              Madam S Adalah seorang Executor 'Tukang Pukul' di perusahaan Piggy Production's 
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="poster Juki"></div>
+        <div class="details">
+          <h1>Juki</h1>
+          <div class="desc">
+            <p>
+              Juki Adalah seorang Executor Kedua 'Tukang Pukul' di perusahaan Piggy Production's 
+            </p>
+          </div>
+        </div>
+      </div>
+      <button id="prev" onclick="goPrev()" title="Prev">
+        <i class="fas fa-chevron-left"></i> 
+      </button>
+
+      <button id="next" onclick="goNext()" title="Next">
+        <i class="fas fa-chevron-right"></i>
+      </button>
     </div>
     
+    <script src="./script/slider.js" defer></script>
     <script src="./script/clock.js" defer></script>
     <script src="./script/script.js" defer></script>
 
